@@ -4,11 +4,15 @@ title:  "Setting up jekyll with minimal-mistakes theme"
 date:   2019-01-19 08:22:36 +1100
 categories: jekyll theme
 ---
+Ok so we want to make a new jekyll blog. Cool! First things first, have `jekyll` installed in a local scope and add `gems` to your `PATH` in `~/.bashrc` etc etc. 
+
+I am assuming you have an environment set up, let's go!
+
 ```bash
-jekyll new test
+jekyll new obrasier.github.io
 ```
 ```bash
-owen@owen-linux:~/repos/test -> ls
+owen@owen-linux:~/repos/obrasier.github.io -> ls
 404.html  about.md  _config.yml  Gemfile  Gemfile.lock  index.md  _posts
 ```
 I have a couple of goals, which I think *should* be simple:
@@ -57,9 +61,9 @@ gem "jekyll-include-cache"
 
 This looks promising...
 ```bash
-Configuration file: /home/owen/repos/test/_config.yml
-            Source: /home/owen/repos/test
-       Destination: /home/owen/repos/test/_site
+Configuration file: /home/owen/repos/obrasier.github.io/_config.yml
+            Source: /home/owen/repos/obrasier.github.io
+       Destination: /home/owen/repos/obrasier.github.io/_site
  Incremental build: disabled. Enable with --incremental
       Generating...
       Remote Theme: Using theme mmistakes/minimal-mistakes
@@ -82,7 +86,7 @@ I'll keep shaving this yak for a bit longer...
 Let's add a `repository` to `_config.yml`
 
 ```yaml
-repository: obrasier/test-site
+repository: obrasier/obrasier.github.io
 ```
 
 Ok, lets' see if this works now. According to [this github issue ticket](https://github.com/jekyll/jekyll/issues/4705), I should be able to build locally by removing `gh-pages`, however, I _do_ want to host on Github Pages, so I want this step to work anyway.
@@ -90,9 +94,9 @@ Ok, lets' see if this works now. According to [this github issue ticket](https:/
 Woo!
 
 ```bash
-Configuration file: /home/owen/repos/test/_config.yml
-            Source: /home/owen/repos/test
-       Destination: /home/owen/repos/test/_site
+Configuration file: /home/owen/repos/obrasier.github.io/_config.yml
+            Source: /home/owen/repos/obrasier.github.io
+       Destination: /home/owen/repos/obrasier.github.io/_site
  Incremental build: disabled. Enable with --incremental
       Generating...
       Remote Theme: Using theme mmistakes/minimal-mistakes
@@ -101,7 +105,7 @@ Configuration file: /home/owen/repos/test/_config.yml
      Build Warning: Layout 'post' requested in _posts/2019-01-19-welcome-to-jekyll.markdown does not exist.
      Build Warning: Layout 'page' requested in about.md does not exist.
                     done in 263.116 seconds.
- Auto-regeneration: enabled for '/home/owen/repos/test'
+ Auto-regeneration: enabled for '/home/owen/repos/obrasier.github.io'
     Server address: http://127.0.0.1:4000/
   Server running... press ctrl-c to stop.
 ```
