@@ -1,0 +1,1 @@
+This is my blog. It uses jekyll and the [minimal mistakes](https://github.com/mmistakes/minimal-mistakes/) theme.
