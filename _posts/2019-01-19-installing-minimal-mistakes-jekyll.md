@@ -161,6 +161,14 @@ Changing to the `dark` theme, adding an avatar. I think my next post might be on
 
 But that's a post for another day. 
 
+Ok, let's push and see if it displays on github. 
+
+*... blank white page ...*
+
+Nooooooooooooooooooooo!
+
+
+
 
 
 
