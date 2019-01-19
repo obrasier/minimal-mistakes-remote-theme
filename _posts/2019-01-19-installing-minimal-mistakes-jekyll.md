@@ -121,7 +121,11 @@ and add to the `Gemfile`
 gem "minimal-mistakes-jekyll"
 ```
 
-Ok! That builds super fast! I'm at the same point with the Remote themes. On the site... I just get a heading "Recent Posts" ... but wihtout any posts displaying.
+Ok! That builds super fast! I'm at the same point with the Remote themes. On the site... I just get a heading "Recent Posts" ... but without any posts displaying.
+
+It looks like this:
+
+![screenshot](/assets/images/pagination.png)
 
 Hmmmmmmm..... Let's continue! In the [Setup your site](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#setup-your-site) section, it says to replace the `index.md` with this contents, and to call it `index.html`, ok!
 
@@ -137,9 +141,11 @@ We also need to add the `pagination` settings because it's of layout `home` to `
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 ```
-Is the post showing? No. Ok. 
+Is the post showing?
+
 ![screenshot](/assets/images/pagination.png)
 
+... I guess not. Let's continue.
 
 So that takes us to the end of the "Quick-start guide" ... shit isn't working. What do?
 
@@ -167,8 +173,29 @@ Ok, let's push and see if it displays on github.
 
 Nooooooooooooooooooooo!
 
+Ok, there's some configuration that I haven't added. According [to this](https://stackoverflow.com/questions/49071139/jekyll-github-works-on-local-but-empty-page-on-https-username-github-io) you need to use the `remote_theme` feature. LOL. Back to square one.
 
+So make the `_config.yml` like this.
+```yaml
+# theme                    : "minimal-mistakes-jekyll"
+remote_theme             : "mmistakes/minimal-mistakes"
+```
 
+...and it works! Yay!
 
+It takes exactly... a long time for it to pull down the remote theme on my local computer, but whatevs, it still builds. 🤷‍♂️
 
+```
+done in 303.062 seconds.
+```
+🤦‍♂️
 
+My internet is horrible.
+
+Looking at the Quick-start guide it says "Remote themes are similar to Gem-based themes, but do not require Gemfile changes or whitelisting making them ideal for sites hosted with GitHub Pages."
+
+... and it doesn't say...
+
+"in order to host on Github Pages you **must** use a `remote_theme`." Although to be fair it's not up to the theme to tell everyone how Github works. Just for a n00b like me, it would have been helpful. That's all.
+
+Cool! So that works, now I can write stuff that noone can read, yay! I'll look into customising the theme soon, which I imagine involves making local versions of the theme files, and yay CSS, my favourite thing! 
