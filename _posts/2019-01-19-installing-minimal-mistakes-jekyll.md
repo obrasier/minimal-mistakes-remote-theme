@@ -191,10 +191,10 @@ done in 303.062 seconds.
 🤦‍♂️
 
 Looking at the Quick-start guide it says "Remote themes are similar to Gem-based themes, but do not require Gemfile changes or whitelisting making them ideal for sites hosted with GitHub Pages."
-
+*... blank white page ...*
 ... and it doesn't say...
 
-"in order to host on Github Pages you **must** use a `remote_theme`." Although to be fair it's not up to the theme to tell everyone how Github works. Just for a n00b like me, it would have been helpful. That's all.
+"in order to host on Github Pages you **must** use a `remote_theme` or fork the repo." Although to be fair it's not up to the theme to tell everyone how Github works. Just for a n00b like me, it would have been helpful. That's all.
 
 Cool! So that works, now I can write stuff that noone can read, yay! I'll look into customising the theme soon, which I imagine involves making local versions of the theme files, and yay CSS, my favourite thing! 
 
