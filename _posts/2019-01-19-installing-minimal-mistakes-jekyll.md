@@ -54,7 +54,7 @@ jekyll 3.7.4 | Error:  jekyll-include-cache
 ```
 So the required package is in my plugins, is the problem that it's not installed locally? Let's add it to the `Gemfile`
 
-```
+```ruby
 gem "jekyll-include-cache"
 ```
 ...run `bundle` again, and then `bundle exec jekyll serve`
@@ -117,7 +117,7 @@ So update `_config.yml`
 theme: minimal-mistakes-jekyll
 ```
 and add to the `Gemfile`
-```
+```ruby
 gem "minimal-mistakes-jekyll"
 ```
 
@@ -129,7 +129,7 @@ It looks like this:
 
 Hmmmmmmm..... Let's continue! In the [Setup your site](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#setup-your-site) section, it says to replace the `index.md` with this contents, and to call it `index.html`, ok!
 
-```
+```yaml
 ---
 layout: home
 author_profile: true
@@ -167,9 +167,9 @@ Changing to the `dark` theme, adding an avatar. I think my next post might be on
 
 But that's a post for another day. 
 
-Ok, let's push and see if it displays on github. 
+Ok, let's push and see if it displays on github:
 
-*... blank white page ...*
+![*... blank white page ...*](/assets/images/white.png)
 
 Nooooooooooooooooooooo!
 
@@ -189,8 +189,6 @@ It takes exactly... a long time for it to pull down the remote theme on my local
 done in 303.062 seconds.
 ```
 🤦‍♂️
-
-My internet is horrible.
 
 Looking at the Quick-start guide it says "Remote themes are similar to Gem-based themes, but do not require Gemfile changes or whitelisting making them ideal for sites hosted with GitHub Pages."
 
