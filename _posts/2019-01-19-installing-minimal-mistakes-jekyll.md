@@ -199,3 +199,9 @@ Looking at the Quick-start guide it says "Remote themes are similar to Gem-based
 "in order to host on Github Pages you **must** use a `remote_theme`." Although to be fair it's not up to the theme to tell everyone how Github works. Just for a n00b like me, it would have been helpful. That's all.
 
 Cool! So that works, now I can write stuff that noone can read, yay! I'll look into customising the theme soon, which I imagine involves making local versions of the theme files, and yay CSS, my favourite thing! 
+
+Plus, that build time makes me want to punch people. So it might be that I'll have to fork the theme repo and host it all locally. I guess that works, it won't do the versioning thingy-thing, but do I really care?
+
+I care about not wanting to punch stuff, so I might just do that. Plus, I'll want to edit some stuff anyway, so this remote stuff is a kind of nice idea, but also actually just annoying. 
+
+The internet is not that good just yet that we can treat everything is on a LAN, not in Australia anyway.
